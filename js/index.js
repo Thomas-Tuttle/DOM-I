@@ -82,11 +82,7 @@ navColor.forEach (element => {
   let logo = document.getElementById("logo-img");
   logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-
-
 //Header Image
-
-
 
 let titleH1 = document.getElementsByTagName('h1')[0];
 titleH1.innerText = siteContent['cta']['h1'];
