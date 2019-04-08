@@ -43,25 +43,32 @@ const siteContent = {
 
 let navOne = document.getElementsByTagName('a')[0];
 navOne.innerText = siteContent['nav']['nav-item-1'];
+navOne.style.transform = "rotate(-15deg)";
 
 let navTwo = document.getElementsByTagName('a')[1];
 navTwo.innerText = siteContent['nav']['nav-item-2'];
+navTwo.style.transform = "rotate(-15deg)";
 
 let navThree = document.getElementsByTagName('a')[2];
 navThree.innerText = siteContent['nav']['nav-item-3'];
+navThree.style.transform = "rotate(-15deg)";
 
 let navFour = document.getElementsByTagName('a')[3];
 navFour.innerText = siteContent['nav']['nav-item-4'];
+navFour.style.transform = "rotate(-15deg)";
 
 let navFive = document.getElementsByTagName('a')[4];
 navFive.innerText = siteContent['nav']['nav-item-5'];
+navFive.style.transform = "rotate(-15deg)";
 
 let navSix = document.getElementsByTagName('a')[5];
 navSix.innerText = siteContent['nav']['nav-item-6'];
+navSix.style.transform = "rotate(-15deg)";
 
 let navSeven = document.createElement('a');
 navSeven.setAttribute('href',"#");
 navSeven.innerHTML = "Help";
+navSeven.style.transform = "rotate(-15deg)";
 
 document.getElementsByTagName('nav')[0].appendChild(navSeven);
 
@@ -69,6 +76,7 @@ let googleLink = "http://google.com";
 let navEight = document.createElement('a');
 navEight.setAttribute('href', googleLink);
 navEight.innerHTML = "Google";
+navEight.style.transform = "rotate(-15deg)";
 
 document.getElementsByTagName('nav')[0].prepend(navEight);
 
@@ -81,6 +89,7 @@ navColor.forEach (element => {
   // Logo in Nav
   let logo = document.getElementById("logo-img");
   logo.setAttribute('src', siteContent["nav"]["img-src"])
+  logo.style.transform = "rotate(15deg)";
 
 //Header Image
 
@@ -101,6 +110,7 @@ domButton.style.backgroundColor = "green";
 
 let headerImage = document.getElementById("cta-img");
 headerImage.setAttribute("src", siteContent["cta"]["img-src"]);
+headerImage.style.transform = "rotate(15deg)";
 
 headerImage.style.borderRadius = "50%";
 headerImage.style.boxShadow = "0px 0px 25px 3px black";
