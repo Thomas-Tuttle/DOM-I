@@ -39,7 +39,8 @@ const siteContent = {
 
 
 
-// Navigation
+
+// NAVIGATION 
 
 let navOne = document.getElementsByTagName('a')[0];
 navOne.innerText = siteContent['nav']['nav-item-1'];
@@ -69,7 +70,6 @@ let navSeven = document.createElement('a');
 navSeven.setAttribute('href',"#");
 navSeven.innerHTML = "Help";
 navSeven.style.transform = "rotate(-15deg)";
-
 document.getElementsByTagName('nav')[0].appendChild(navSeven);
 
 let googleLink = "http://google.com";
@@ -77,48 +77,38 @@ let navEight = document.createElement('a');
 navEight.setAttribute('href', googleLink);
 navEight.innerHTML = "Google";
 navEight.style.transform = "rotate(-15deg)";
-
 document.getElementsByTagName('nav')[0].prepend(navEight);
 
 let navColor = document.querySelectorAll("a");
-
 navColor.forEach (element => {
       element.style.color = 'green';
- });
+});
+  
+let logo = document.getElementById("logo-img");
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+logo.style.transform = "rotate(15deg)";
 
-  // Logo in Nav
-  let logo = document.getElementById("logo-img");
-  logo.setAttribute('src', siteContent["nav"]["img-src"])
-  logo.style.transform = "rotate(15deg)";
 
-//Header Image
+
+
+// TOP CONTENT
 
 let titleH1 = document.getElementsByTagName('h1')[0];
 titleH1.innerText = siteContent['cta']['h1'];
-
 titleH1.style.transform = "rotate(-15deg)";
-
 
 let domButton = document.getElementsByTagName("button")[0];
 domButton.innerText = siteContent['cta']['button'];
-
 domButton.style.transform = "rotate(-15deg)";
 domButton.style.borderRadius = "15px";
 domButton.style.boxShadow = "0px 0px 25px 3px black";
 domButton.style.backgroundColor = "green";
 
-
 let headerImage = document.getElementById("cta-img");
 headerImage.setAttribute("src", siteContent["cta"]["img-src"]);
 headerImage.style.transform = "rotate(15deg)";
-
 headerImage.style.borderRadius = "50%";
 headerImage.style.boxShadow = "0px 0px 25px 3px black";
-
-let middleImage = document.getElementById("middle-img");
-middleImage.setAttribute("src", "img/mid-page-accent.jpg")
-middleImage.style.borderRadius = "15px";
-middleImage.style.boxShadow = "0px 0px 25px 3px black";
 
 let featuresH4 = document.getElementsByTagName('h4')[0];
 featuresH4.innerText = siteContent['main-content']['features-h4'];
@@ -131,6 +121,21 @@ aboutH4.innerText = siteContent['main-content']['about-h4'];
 
 let aboutContent = document.getElementsByTagName('p')[1];
 aboutContent.innerText = siteContent['main-content']['about-content'];
+
+
+
+
+// MIDDLE IMAGE
+
+let middleImage = document.getElementById("middle-img");
+middleImage.setAttribute("src", "img/mid-page-accent.jpg");
+middleImage.style.borderRadius = "15px";
+middleImage.style.boxShadow = "0px 0px 25px 3px black";
+
+
+
+
+// BOTTOM CONTENT
 
 let servicesH4 = document.getElementsByTagName('h4')[2];
 servicesH4.innerText = siteContent['main-content']['services-h4'];
@@ -150,7 +155,10 @@ visionH4.innerText = siteContent['main-content']['vision-h4'];
 let visionContent = document.getElementsByTagName('p')[4];
 visionContent.innerText = siteContent['main-content']['vision-content'];
 
-// Contact Section
+
+
+
+// CONTACT INFO
 
 let contactH4 = document.getElementsByTagName('h4')[5];
 contactH4.innerText = siteContent['contact']['contact-h4'];
@@ -163,6 +171,11 @@ phone.innerText = siteContent['contact']['phone'];
 
 let email = document.getElementsByTagName('p')[7];
 email.innerText = siteContent['contact']['email'];
+
+
+
+
+// FOOTER
 
 let footer = document.getElementsByTagName('p')[8];
 footer.innerText = siteContent['footer']['copyright'];
